@@ -15,7 +15,6 @@ type QuestionType = {
     likeId: string | undefined;
 }
 
-
 type FirebaseQuestions = Record<string, { 
     author: {
         name:string;
@@ -28,7 +27,6 @@ type FirebaseQuestions = Record<string, {
         authorId: string;
     }>
 }>
-
 
 export function useRoom(roomId: string) {
     const { user } = useAuth();
